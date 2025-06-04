@@ -13,7 +13,7 @@ COPY . .
 # Restore dependencies
 RUN dotnet restore
 
-# Build and publish the specific project
+# Build and publish the IDS project
 RUN dotnet publish KingsInns.IDS/KingsInns.IDS.csproj -c Release -o /app --no-restore
 
 # Runtime stage

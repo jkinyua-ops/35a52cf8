@@ -1,4 +1,4 @@
-app = "35a52cf8-ids"
+app = "35a52cf8-kingsinns-ids"
 primary_region = "jnb"
 kill_signal = "SIGINT"
 kill_timeout = "5s"
@@ -13,19 +13,13 @@ kill_timeout = "5s"
   ConnectionStrings__DefaultConnection = "Data Source=62.171.156.247;Initial Catalog=35a52cf8ids;User ID=sa;Password=123@Teams"
   
   # Service URLs
-  IdentitySettings__Authority = "https://35a52cf8-ids.fly.dev/"
-  IdentitySettings__TokenEndpoint = "https://35a52cf8-ids.fly.dev/connect/token"
-  IdentitySettings__UserInformationEndpoint = "https://35a52cf8-ids.fly.dev/connect/userinfo"
-  IdentitySettings__AuthorizationEndpoint = "https://35a52cf8-ids.fly.dev/connect/authorize"
-  IdentitySettings__SelfUrl = "https://35a52cf8-ids.fly.dev/"
-  IdentitySettings__MetadataAddress = "https://35a52cf8-ids.fly.dev/.well-known/openid-configuration"
-  IdentitySettings__ApiUrl = "https://35a52cf8-host.fly.dev/"
+  SelfUrl = "https://35a52cf8-kingsinns-ids.fly.dev"
   
-  # Seed data environment variables
-  SeedData__AllowedCorsOrigins__0 = "https://35a52cf8-web.fly.dev"
-  SeedData__AllowedCorsOrigins__1 = "https://35a52cf8-host.fly.dev"
-  SeedData__RedirectUris__0 = "https://35a52cf8-web.fly.dev/signin-oidc"
-  SeedData__PostLogoutRedirectUris__0 = "https://35a52cf8-web.fly.dev/signout-callback-oidc"
+  # Seed data for Identity Server
+  SeedData__AllowedCorsOrigins__0 = "https://35a52cf8-kingsinns-web.fly.dev"
+  SeedData__AllowedCorsOrigins__1 = "https://35a52cf8-kingsinns-host.fly.dev"
+  SeedData__RedirectUris__0 = "https://35a52cf8-kingsinns-web.fly.dev/signin-oidc"
+  SeedData__PostLogoutRedirectUris__0 = "https://35a52cf8-kingsinns-web.fly.dev/signout-callback-oidc"
 
 [http_service]
   internal_port = 8080
@@ -38,4 +32,4 @@ kill_timeout = "5s"
 [[vm]]
   cpu_kind = "shared"
   cpus = 1
-  memory = "1gb"
+  memory = "512mb"

@@ -13,7 +13,7 @@ COPY . .
 # Restore dependencies
 RUN dotnet restore
 
-# Build and publish the specific project
+# Build and publish the Host API project
 RUN dotnet publish KingsInns.Dining.Host/KingsInns.Dining.Host.csproj -c Release -o /app --no-restore
 
 # Runtime stage

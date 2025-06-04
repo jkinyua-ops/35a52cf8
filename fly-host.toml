@@ -1,4 +1,4 @@
-app = "35a52cf8-host"
+app = "35a52cf8-kingsinns-host"
 primary_region = "jnb"
 kill_signal = "SIGINT"
 kill_timeout = "5s"
@@ -13,13 +13,12 @@ kill_timeout = "5s"
   ConnectionStrings__DefaultConnection = "Data Source=62.171.156.247;Initial Catalog=35a52cf8host;User ID=sa;Password=123@Teams"
   
   # Service URLs
-  IdentitySettings__Authority = "https://35a52cf8-ids.fly.dev/"
-  IdentitySettings__TokenEndpoint = "https://35a52cf8-ids.fly.dev/connect/token"
-  IdentitySettings__UserInformationEndpoint = "https://35a52cf8-ids.fly.dev/connect/userinfo"
-  IdentitySettings__AuthorizationEndpoint = "https://35a52cf8-ids.fly.dev/connect/authorize"
-  IdentitySettings__SelfUrl = "https://35a52cf8-host.fly.dev/"
-  IdentitySettings__MetadataAddress = "https://35a52cf8-ids.fly.dev/.well-known/openid-configuration"
-  IdentitySettings__ApiUrl = "https://35a52cf8-host.fly.dev/"
+  SelfUrl = "https://35a52cf8-kingsinns-host.fly.dev"
+  IdentitySettings__Authority = "https://35a52cf8-kingsinns-ids.fly.dev"
+  IdentitySettings__TokenEndpoint = "https://35a52cf8-kingsinns-ids.fly.dev/connect/token"
+  IdentitySettings__UserInformationEndpoint = "https://35a52cf8-kingsinns-ids.fly.dev/connect/userinfo"
+  IdentitySettings__AuthorizationEndpoint = "https://35a52cf8-kingsinns-ids.fly.dev/connect/authorize"
+  IdentitySettings__MetadataAddress = "https://35a52cf8-kingsinns-ids.fly.dev/.well-known/openid-configuration"
 
 [http_service]
   internal_port = 8080
@@ -32,4 +31,4 @@ kill_timeout = "5s"
 [[vm]]
   cpu_kind = "shared"
   cpus = 1
-  memory = "1gb"
+  memory = "512mb"
